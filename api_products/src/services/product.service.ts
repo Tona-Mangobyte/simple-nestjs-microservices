@@ -11,6 +11,6 @@ export class ProductService {
     getProducts() {
         const pattern = { cmd: 'get.products' };
         const data = { page: 1, limit: 30 };
-        return this.productServiceClient.send<number>(pattern, data);
+        return this.productServiceClient.send<any>(pattern, data);
     }
 }

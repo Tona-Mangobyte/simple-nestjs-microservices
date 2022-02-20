@@ -6,7 +6,7 @@ import {RequestPage} from "../common";
 @Controller()
 export class OrderController {
 
-    constructor(private orderService: OrderService) {
+    constructor(private readonly orderService: OrderService) {
     }
 
     @MessagePattern({ cmd: 'get.invoices' })

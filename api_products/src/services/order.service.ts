@@ -11,6 +11,6 @@ export class OrderService {
     getInvoices() {
         const pattern = { cmd: 'get.invoices' };
         const data = { page: 1, limit: 30 };
-        return this.orderServiceClient.send<number>(pattern, data);
+        return this.orderServiceClient.send<any>(pattern, data);
     }
 }
